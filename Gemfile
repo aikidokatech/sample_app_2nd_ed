@@ -20,6 +20,9 @@ group :assets do
   gem 'sass-rails',   '3.2.4'
   gem 'coffee-rails', '3.2.2'
   gem 'uglifier', '1.2.3'
+
+  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
+  gem 'therubyracer', :platforms => :ruby
 end
 
 group :test do
@@ -34,5 +37,5 @@ group :test do
 end
 
 group :production do
-  gem 'pg', '0.12.2'
+#  gem 'pg', '0.12.2'
 end
